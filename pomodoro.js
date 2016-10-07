@@ -63,7 +63,7 @@ function countdownTimer() {
       clearInterval(timing);
       mainTimer();
     }
-    if (seconds === 0 && minutes === 0) {
+    if (seconds === -1 && minutes === 0) {
       clearInterval(timing);
       audioBreak.play();
       if (cycle === "work") {
