@@ -44,9 +44,16 @@ p {
   text-align: center;
   font-size: 5vh;
 }
+
 a {
   color: lightgray;
 }
+
+a:hover {
+  text-decoration: none;
+  color: lightgray;
+}
+
 .main {
 
 }
@@ -66,11 +73,12 @@ a {
 
 @media screen and (max-width: 1441px) {
   .slides {
-    width: 60%;
+    width: 80%;
     margin: auto;
     position: relative;
     top: 0vh;
 }
+
 .all {
   position: relative;
   top: 15%;

@@ -5,6 +5,7 @@ var minutes = parseInt($("#minutes").html());
 var status = "inactive";
 var audioBreak = new Audio("break.wav");
 var cycle = "work";
+
 // Assigning buttons and status changes
 
 $("#minus_break").click(function () {
