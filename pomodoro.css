@@ -1,0 +1,89 @@
+body {
+    background-image: url("bckgr.png");
+    background-repeat: repeat;
+}
+
+p {
+  text-shadow:  0px 0px 15px #fff;
+}
+
+.slides {
+  width: 45%;
+  position: relative;
+  top: 10vh;
+}
+
+#right_slide {
+  position:relative;
+  right: 0.4vw;
+}
+
+#left_slide {
+  position: relative;
+  right: 0.4vw;
+}
+
+#left {
+  float: right;
+}
+
+#right {
+  float: left;
+}
+
+
+.all {
+  position: relative;
+  top: 30%;
+}
+
+p {
+  font-family: Subway, sans-serif;
+  color: lightgray;
+  font-weight: 300;
+  text-align: center;
+  font-size: 5vh;
+}
+a {
+  color: lightgray;
+}
+.main {
+
+}
+
+.timer {
+  font-size: 20vh;
+  text-align: center;
+}
+
+.timer_seconds {
+  font-size: 10vh;
+}
+
+.row {
+  margin: 2%;
+}
+
+@media screen and (max-width: 1441px) {
+  .slides {
+    margin: auto;
+    position: relative;
+    top: 0vh;
+}
+.all {
+  position: relative;
+  top: 15%;
+}
+#left {
+  float: none;
+}
+
+#right {
+  float: none;
+}
+}
+
+@font-face {
+    font-family: "Subway";
+    src: url(subway-ticker.ttf) format("truetype");
+}
