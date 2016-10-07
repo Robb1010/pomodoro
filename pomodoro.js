@@ -24,8 +24,8 @@ $("#plus_break").click(function () {
 
 $("#minus_work").click(function () {
   status = "changed";
-  if (workTime > breakTime) {
-    $("#right_slide").html(workTime - 5);
+  if (workTime > 0) {
+    $("#right_slide").html(workTime - 1);
     workTime = parseInt($("#right_slide").html());
   }
 });
@@ -50,6 +50,7 @@ function mainTimer() {
 }
 
 
+
 function countdownTimer() {
     $("#seconds").html(seconds-1);
     seconds = parseInt($("#seconds").html());
@@ -63,12 +64,12 @@ function countdownTimer() {
       clearInterval(timing);
       mainTimer();
     }
-    if (seconds === -1 && minutes === 0) {
+    if (seconds === 0  && minutes === 0) {
       clearInterval(timing);
       audioBreak.play();
       if (cycle === "work") {
-      $("#minutes").html(breakTime -1);
-      minutes = parseInt($("#minutes").html());
+      minutes = breakTime - 1;
+      $("#minutes").html(minutes);
       mainTimer();
       cycle = "break";
     } else {
