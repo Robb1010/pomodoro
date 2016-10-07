@@ -24,15 +24,15 @@ $("#plus_break").click(function () {
 
 $("#minus_work").click(function () {
   status = "changed";
-  if (workTime > 0) {
-    $("#right_slide").html(workTime - 1);
+  if (workTime > breakTime) {
+    $("#right_slide").html(workTime - 5);
     workTime = parseInt($("#right_slide").html());
   }
 });
 
 $("#plus_work").click(function () {
   status = "changed";
-  if (workTime < 185) {
+  if (workTime < 180) {
     $("#right_slide").html(workTime + 5);
     workTime = parseInt($("#right_slide").html());
   }
