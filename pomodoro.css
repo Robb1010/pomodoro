@@ -43,6 +43,9 @@ p {
   font-weight: 300;
   text-align: center;
   font-size: 5vh;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
 }
 
 a {
@@ -90,10 +93,10 @@ a:hover {
 #right {
   float: none;
 }
+
 p {
   font-size: 7vh;
 }
-
 }
 
 @font-face {
